@@ -67,8 +67,20 @@ else
   log "下載程式 / Downloading the bundle"
   WORK_DIR="$(mktemp -d)"
   trap 'rm -rf "$WORK_DIR"' EXIT
-  curl -fsSL "https://github.com/${BUNDLE_REPO}/archive/refs/heads/main.tar.gz" \
-    | tar -xz -C "$WORK_DIR" --strip-components=1
+  # Download to a file and let tar judge it: github.com has been seen to
+  # answer the archive URL with an HTML page and HTTP 200, which a
+  # curl-into-tar pipe reports only as an unreadable archive.
+  FETCHED=0
+  for url in \
+      "https://codeload.github.com/${BUNDLE_REPO}/tar.gz/refs/heads/main" \
+      "https://github.com/${BUNDLE_REPO}/archive/refs/heads/main.tar.gz"; do
+    if curl -fsSL -o "$WORK_DIR/bundle.tar.gz" "$url" \
+        && tar -xzf "$WORK_DIR/bundle.tar.gz" -C "$WORK_DIR" --strip-components=1 2>/dev/null; then
+      FETCHED=1; break
+    fi
+  done
+  [ "$FETCHED" = "1" ] || die "下載唔到程式。檢查網絡之後重新貼一次安裝指令。"
+  rm -f "$WORK_DIR/bundle.tar.gz"
   BUNDLE_DIR="$WORK_DIR"
   ok "下載完成"
 fi

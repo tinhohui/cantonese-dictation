@@ -3,7 +3,7 @@
   "files": {
     "README.md": "3c456dac9f2bff0b05b9db4043f5da90c92b06875d76a2d8b1d3502d1f148c6e",
     "hammerspoon/init.lua": "bc41a7042ab2ceafb0fcbb8952a9ea5c2730570e89b4b29151f0cf8986146288",
-    "install.sh": "f4cbe72ef61b9448ee37daac7151c306a5b9d30dfb39a837b03b481f91cbbf9c",
+    "install.sh": "92ee8e177e3cb671e3ac731c004912a96d74bc5c3d05106c174905028ac30b49",
     "launchd/com.huitinho.dictation.plist.template": "f665adf34cf659953a94788b71927bdffe76aed652db0482def6a0dfe306bfca",
     "ops/fix_dictation_now.sh": "3533604fbcb38d769c1372317c83107d1fcbaa853b4dfb6d8e1c2a1c325003db",
     "runtime/content_guard.py": "4b3cd1125469306a97cb73033b5c6f632a2cbe9f12621a9a4fbb43cf40f19550",
@@ -49,5 +49,5 @@
     "qwen2.5:3b",
     "qwen2.5:7b"
   ],
-  "source_commit": "abcbb32e306db17397cdbf7569a751376e1d4c34"
+  "source_commit": "13de3396abc32dc78e390524ac94d31060556481"
 }
