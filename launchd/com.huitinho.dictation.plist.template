@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>DICTATION_ASR_TAIL_PAD_SECONDS</key>
+		<string>0.3</string>
+		<key>DICTATION_ASR_TARGET_RMS</key>
+		<string>0.12</string>
+		<key>DICTATION_DEFAULT_LANG</key>
+		<string>auto</string>
+		<key>DICTATION_FG_STRUCT_TIMEOUT</key>
+		<string>0.35</string>
+		<key>DICTATION_FG_TIMEOUT</key>
+		<string>0.35</string>
+		<key>DICTATION_FOREGROUND_LLM</key>
+		<string>0</string>
+		<key>DICTATION_INPUT_VOLUME_MIN</key>
+		<string>30</string>
+		<key>DICTATION_INPUT_VOLUME_TARGET</key>
+		<string>45</string>
+		<key>DICTATION_LLM_FAST</key>
+		<string>qwen2.5:3b</string>
+		<key>DICTATION_LOCK_ACQUIRE_TIMEOUT</key>
+		<string>110</string>
+		<key>DICTATION_MAX_LOCK_SECONDS</key>
+		<string>100</string>
+		<key>DICTATION_SEGMENT_SECONDS</key>
+		<string>8</string>
+		<key>DICTATION_SELFTEST_LOCK_TIMEOUT</key>
+		<string>15</string>
+		<key>DICTATION_SHORT_AUDIO_SKIP_SECONDS</key>
+		<string>0</string>
+		<key>DICTATION_STOP_TAIL_GRACE_SECONDS</key>
+		<string>0.2</string>
+		<key>DICT_REPO</key>
+		<string>off</string>
+		<key>PATH</key>
+		<string>/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+	</dict>
+	<key>KeepAlive</key>
+	<true/>
+	<key>Label</key>
+	<string>com.huitinho.dictation</string>
+	<key>ProcessType</key>
+	<string>Interactive</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>__HOME__/dictation/venv/bin/python3</string>
+		<string>__HOME__/dictation/server.py</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StandardErrorPath</key>
+	<string>/tmp/dictation.log</string>
+	<key>StandardOutPath</key>
+	<string>/tmp/dictation.log</string>
+	<key>ThrottleInterval</key>
+	<integer>10</integer>
+	<key>WorkingDirectory</key>
+	<string>__HOME__/dictation</string>
+</dict>
+</plist>

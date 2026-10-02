@@ -1,0 +1,20 @@
+{
+  "triggers" : [
+    {
+      "keycode" : 54,
+      "label" : "右 ⌘",
+      "type" : "modifier"
+    },
+    {
+      "label" : "⌃⌥⌘\\",
+      "type" : "key",
+      "mods" : {
+        "shift" : false,
+        "cmd" : true,
+        "alt" : true,
+        "ctrl" : true
+      },
+      "keycode" : 42
+    }
+  ]
+}

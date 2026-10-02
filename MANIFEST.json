@@ -1,0 +1,53 @@
+{
+  "bundle_repo": "tinhohui/cantonese-dictation",
+  "files": {
+    "README.md": "3c456dac9f2bff0b05b9db4043f5da90c92b06875d76a2d8b1d3502d1f148c6e",
+    "hammerspoon/init.lua": "bc41a7042ab2ceafb0fcbb8952a9ea5c2730570e89b4b29151f0cf8986146288",
+    "install.sh": "f4cbe72ef61b9448ee37daac7151c306a5b9d30dfb39a837b03b481f91cbbf9c",
+    "launchd/com.huitinho.dictation.plist.template": "f665adf34cf659953a94788b71927bdffe76aed652db0482def6a0dfe306bfca",
+    "ops/fix_dictation_now.sh": "3533604fbcb38d769c1372317c83107d1fcbaa853b4dfb6d8e1c2a1c325003db",
+    "runtime/content_guard.py": "4b3cd1125469306a97cb73033b5c6f632a2cbe9f12621a9a4fbb43cf40f19550",
+    "runtime/dictation_incident_report.py": "43439e9e8096aa01abea87a8e1211d9db6470bea77afc6a17656ec0dfe00bf50",
+    "runtime/dictionary.json": "b80eb7a8687fa35941605a1bfe85766b57aedfb42d572fe869755940b2a2acfc",
+    "runtime/editor.py": "0778d0d54b064d9b5bb8f1128928526669ed1b2e5960bed7a7cb7a300df871c4",
+    "runtime/hotkey.json": "9506aae0e80537ef74faf18438be9fe161af8e7e7cc22db7e8a73a0e926d9f36",
+    "runtime/incident_quarantine.py": "954d8f0e309b951b7e66ddf84e8ac6d5710d4fdb4ee784ebabe5d34579a40378",
+    "runtime/maintenance.py": "319198996dc894afc7a7f22f8224e97e71b0b9f64910a7448929b237b88556ac",
+    "runtime/output_language_gate.py": "f30a5aa15ffac4591bebd025a8b1df9e99c5afba8b42a5df1d817a55ec5b3662",
+    "runtime/paragraph.py": "eafe75792e2ffdac936fce30166a1728a8e8e9e0610040fa772b120ba2dddbd5",
+    "runtime/phonetics.py": "89a91053506ba793a7b63b317e0045e06a0762ce5e86e2e1bb6d263988b570fa",
+    "runtime/polish.py": "c9507bcfa119f7eb683926c427f290e0697bad611c9b2f381858b79121ab0e22",
+    "runtime/readiness_gate.py": "ad050f6f986e2813e8a96ed95d15d7017e49153bc6f2e71be7809e7ee0772431",
+    "runtime/recording_gate.py": "a5ca656802ea38100fd8eaa8fd3f4434eed253fb65b49ce4006ac024df4e406d",
+    "runtime/requirements.txt": "066d61c99f4802117dd0faa7e9ab77ca9f563b3fee6be60a6881f57d0d92490d",
+    "runtime/review_gate.py": "2ea968ea141dbd3db29f381620b6212a58b673389c8b7ac3cfe7b87d43866066",
+    "runtime/rule_audit.py": "266f49bb311025d92c956154aa21af9704e4f22e9e11fa51841a1ec602860a1c",
+    "runtime/server.py": "819d7ec3209244cd8a9635167f3f00d32baad621d787704a731dc7fd23040e08",
+    "runtime/stop_integrity_guard.py": "d89dc5f679290483d5a4d9930fd1c91f6ad1d46c78695c56ee7f6fdcc140b8ca",
+    "runtime/watchdog.py": "768f0d071eb3097a2e722f3e199dbd0e4718d75522b437a7c209d5e12851de5a"
+  },
+  "label": "com.huitinho.dictation",
+  "modules": [
+    "content_guard",
+    "dictation_incident_report",
+    "editor",
+    "incident_quarantine",
+    "maintenance",
+    "output_language_gate",
+    "paragraph",
+    "phonetics",
+    "polish",
+    "readiness_gate",
+    "recording_gate",
+    "review_gate",
+    "rule_audit",
+    "server",
+    "stop_integrity_guard",
+    "watchdog"
+  ],
+  "ollama_models": [
+    "qwen2.5:3b",
+    "qwen2.5:7b"
+  ],
+  "source_commit": "abcbb32e306db17397cdbf7569a751376e1d4c34"
+}

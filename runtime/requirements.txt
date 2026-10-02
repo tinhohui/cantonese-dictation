@@ -1,0 +1,5 @@
+# Pinned to the versions the live install runs (Python 3.12, Apple Silicon).
+sherpa-onnx==1.13.4
+sounddevice==0.5.5
+numpy==2.5.1
+opencc-python-reimplemented==0.1.7
